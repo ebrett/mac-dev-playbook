@@ -3,9 +3,9 @@ downloads: ~/.ansible-downloads/
 
 configure_sudoers: yes
 
-dotfiles_repo: https://github.com/geerlingguy/dotfiles.git
+dotfiles_repo: https://github.com/ebrett/dotfiles.git
 dotfiles_repo_accept_hostkey: yes
-dotfiles_repo_local_destination: ~/Dropbox/Development/GitHub/dotfiles
+dotfiles_repo_local_destination: ~/Projects/dotfiles
 dotfiles_files:
   - .bash_profile
   - .gitconfig
@@ -18,6 +18,7 @@ homebrew_installed_packages:
   # - ansible # Installed via Pip.
   - autoconf
   - bash-completion
+  - dockutil
   - doxygen
   - gettext
   - git
@@ -59,24 +60,84 @@ homebrew_taps:
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
+  - alfred
+  - banktivity
+  - crashplan
   - docker
   - dropbox
+  - dupeguru
+  - evernote
   - fing
   - firefox
+  - github-desktop
+  - githubpulse
   - google-chrome
+  - google-drive
+  - google-hangouts
   - handbrake
+  - ishowu-hd
+  - iterm2
   - kdiff3
   - licecap
   - limechat
+  - macdown
   - macvim
+  - mailbutler
+  - microsoft-office
+  - monity-helper
   - yujitach-menumeters # Note: Using forked version for 10.11+ support
   - nvalt
+  - omnifocus
+  - omnidisksweeper
+  - rescuetime
   - sequel-pro
+  - skitch
+  - spectacle
+  - superduper
   - skype
   - skitch
   - slack
   - sublime-text
+  - textexpander
   - transmit
+  - upwork
+  - utorrent
   - vagrant
   - virtualbox
   - vlc
+  - whatsize
+  - yubikey-piv-manager
+
+dockitems_to_remove:
+  - Launchpad
+  - Mail
+  - Safari
+  - Contacts
+  - Notes
+  - Reminders
+  - Maps
+  - Photos
+  - Messages
+  - FaceTime
+  - iTunes
+  - iBooks
+  - App Store
+  - System Preferences
+  - Calendar
+
+dockitems_to_persist:
+  - name: "Google Chrome"
+    path: "/Applications/Google Chrome.app"
+    pos: 1
+  - name: Firefox
+    path: "/Applications/Firefox.app"
+    pos: 2
+  - name: Slack
+    path: /Applications/Slack.app
+    pos: 3
+  - name: VirtualBox
+    path: /Applications/VirtualBox.app
+    pos: 4
+  - name: iTerm
+    path: /Applications/iTerm.app
+    pos: 5
